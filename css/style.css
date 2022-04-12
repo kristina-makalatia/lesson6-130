@@ -1,0 +1,120 @@
+header styles*/
+.header-wraper {
+	background: lightblue;
+	padding: 25px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 50;
+}
+.logo {
+	display: inline-block;
+	margin-right: 30px;
+}
+.navigation {
+	display: inline-block;
+}
+.nav-li {
+	display: inline-block;
+}
+body {
+	/*padding-top: 68px;*/
+}
+
+/*section#1 styles*/
+.section-after-header {
+	margin-top:  68px;
+}
+.container {
+	width: 1160px;
+	margin: 0 auto;
+}
+.block {
+	display: inline-block;
+	width: 360px;
+	background:yellow;
+	position: relative;
+}
+.size {
+	margin-right: 40px;
+}
+.title-image {
+	position: absolute;
+	left: 40px;
+	top: 28px;
+	color: #fff;
+}
+
+/*chat icon styles*/
+.image-chat {
+	height: 100px;
+}
+.chat-icon {
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+}
+
+.wraper-box {
+	width:  400px;
+	height: 400px;
+	background: yellow;
+	position: relative;
+
+/*	transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-out;
+	transition-delay: 3s;*/
+	transition: all 0.5s ease-out 3s;
+}
+.box {
+	width: 150px;
+	height: 150px;
+	background: blue;
+	position: absolute;
+	top: 50%;
+	left:  50%;
+	transition: all 2s linear;
+	transform: translate(-50%,-50%) rotate(45deg);
+}
+
+/*hover*/
+.wraper-box:hover {
+	background:pink;
+}
+.box:hover {
+	background: red;
+	transform:translate(-50%,-50%) rotate(-45deg);
+}
+/*.wraper-box:hover .box {
+	background: coral;
+}
+
+/*animation car*/
+.image-car {
+	width: 200px;
+	animation: caranimation2 2s infinite alternate ease-out 3s;
+	/*position: absolute;*/
+}
+.car-animation {
+	/*position: relative;*/
+}
+
+
+/*keyframes*/
+/*@keyframes caranimation {
+	0% {left: 0px;}
+	25%{left: 200px;}
+	50% {left: 400px;}
+	75% {left: 600px;}
+	100% {left: 800px;}
+}*/
+
+@keyframes caranimation2 {
+	0% {transform: translateX(0px);}
+	25%{transform: translateX(200px);}
+	50% {transform: translateX(400px);}
+	75% {transform: translateX(600px);}
+	100% {transform: translateX(800px);}
+}
